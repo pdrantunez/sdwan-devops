@@ -4,4 +4,4 @@
 	branch = cloud
 [submodule "sdwan-edge"]
 	path = sdwan-edge
-	url = https://github.com/CiscoDevNet/sdwan-edge.git
+	url = https://github.com/pdrantunez/sdwan-edge

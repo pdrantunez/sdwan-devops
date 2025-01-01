@@ -6,6 +6,9 @@ subnet_service = "sdwan-subnet-service"
 {% if aws_route53_zone is defined and aws_route53_zone != "" %}
 route53_zone = "{{ aws_route53_zone }}"
 {% endif %}
+{% if acl_cidr_blocks is defined and acl_cidr_blocks != "" %}
+acl_cidr_blocks = [ {{ acl_cidr_blocks }} ]
+{% endif %}
 image_id = "{{ edge_image_id }}"
 instance_type = "{{ edge_instance_type }}"
 {% if common_tags is defined and common_tags != "" %}
